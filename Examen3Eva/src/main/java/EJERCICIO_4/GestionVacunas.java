@@ -1,6 +1,6 @@
 
 /**
- * Ejercicio 4 del examen de ED Refactor y JavaDoc
+ * Ejercicio 4 del examen de ED Refactor y JavaDoc 
  * @author Jorge Rodriguez
  * @version 1.0.0
  */
