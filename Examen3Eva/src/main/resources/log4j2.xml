@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+
+
+<Properties>
+
+        <Property name="basePath">/home/mint/eclipse-workspace/Examen3Eva/FicherosLogs</Property>
+
+    </Properties>
+
+  <Appenders>
+
+
+	<Console name="Console">
+
+		<PatternLayout pattern="%d{HH:mm} %-5level %c{20} %msg%n"/>
+
+		
+
+	</Console>
+
+	 <RollingFile name="fileLogger" fileName="${basePath}/app-info.log" filePattern="${basePath}/app-info-%d{dd HH:mm}.log">
+
+            <PatternLayout>
+
+                <pattern>[%-5level] %d{dd HH:mm} [%t] %c{1} - %msg%n</pattern>
+
+            </PatternLayout>
+
+            <Policies>
+
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+
+            </Policies>
+
+        </RollingFile>
+
+	     <File name="File" fileName="${basePath}/JORGE_LOGS_3EVA.txt">
+
+            <PatternLayout pattern="%d{dd HH:mm} %-5level %logger{36} - %msg%n" />
+
+        </File>
+
+  </Appenders>
+  <Loggers>
+    <Root level="all">
+      <AppenderRef ref="Console"/>
+      <AppenderRef level="info" ref="fileLogger"/>
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+
+
+</Configuration>

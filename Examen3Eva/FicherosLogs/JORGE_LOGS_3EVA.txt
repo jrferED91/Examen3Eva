@@ -1,0 +1,2 @@
+03 09:11 INFO  EJERCICIO_1.MainPedirDatos - Se ha introducido un valor impar en la lista
+03 09:11 DEBUG EJERCICIO_1.MainPedirDatos - Se ha introducido un valor par
